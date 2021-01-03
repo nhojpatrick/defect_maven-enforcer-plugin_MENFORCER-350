@@ -40,10 +40,10 @@
 	<!--profiles / -->
 	<!--modules / -->
 	<modules>
-		<module>mvn-3.6.0</module>
-		<module>mvn-3.6.1</module>
-		<module>mvn-3.6.2</module>
-		<module>mvn-3.6.3</module>
+		<module>maven-3.6.0</module>
+		<module>maven-3.6.1</module>
+		<module>maven-3.6.2</module>
+		<module>maven-3.6.3</module>
 	</modules>
 	<!--repositories / -->
 	<!--pluginRepositories / -->
