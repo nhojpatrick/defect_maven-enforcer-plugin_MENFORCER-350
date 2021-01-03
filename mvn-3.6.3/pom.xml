@@ -3,8 +3,13 @@
 	<!--modelVersion / -->
 	<modelVersion>4.0.0</modelVersion>
 	<!--parent / -->
+	<parent>
+		<groupId>tld.testing</groupId>
+		<artifactId>issue-maven-enforcer-plugin</artifactId>
+		<version>1</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 	<!--groupId / -->
-	<groupId>tld.testing</groupId>
 	<!--artifactId / -->
 	<artifactId>issue-maven-enforcer-plugin-mvn-3.6.3</artifactId>
 	<!--version / -->
@@ -29,7 +34,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>3.0.0-M4-SNAPSHOT</version>
 				<executions>
 					<execution>
 						<id>enforce-maven</id>
