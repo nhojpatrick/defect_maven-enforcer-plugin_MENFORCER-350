@@ -6,11 +6,10 @@
 	<!--groupId / -->
 	<groupId>tld.testing</groupId>
 	<!--artifactId / -->
-	<artifactId>issue-maven-enforcer-plugin</artifactId>
+	<artifactId>issue-maven-enforcer-plugin-mvn-3.6.2</artifactId>
 	<!--version / -->
 	<version>1</version>
 	<!--packaging / -->
-	<packaging>pom</packaging>
 	<!--name / -->
 	<!--description / -->
 	<!--url / -->
@@ -26,16 +25,31 @@
 	<!--organization / -->
 	<!--build / -->
 	<build>
-		<defaultGoal>validate</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M4-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>enforce-maven</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.6.2</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 	<!--profiles / -->
 	<!--modules / -->
-	<modules>
-		<module>mvn-3.6.0</module>
-		<module>mvn-3.6.1</module>
-		<module>mvn-3.6.2</module>
-		<module>mvn-3.6.3</module>
-	</modules>
 	<!--repositories / -->
 	<!--pluginRepositories / -->
 	<!--dependencies / -->
